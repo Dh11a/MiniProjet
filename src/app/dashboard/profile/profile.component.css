@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+input{
+    margin-left: 5px;
+    position: relative;
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    font-family: Oswald ,sans-serif;
+
+}
+button{
+    padding: 10px 20px;
+    margin-left:5px ;
+    font-size: 16px;
+    background-color: #F2385A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Oswald ,sans-serif;
+}
+
+button:hover{
+    background-color: #892134;
+    font-family: Oswald ,sans-serif;
+}

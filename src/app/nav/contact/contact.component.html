@@ -1,0 +1,17 @@
+<app-menu></app-menu>
+<section id="contact">
+    <div class="sectionheader">	<h1>CONTACT</h1></div>
+    <article>
+    <p>Nous sommes là vous offrir le meilleur service possible. N'hésitez pas à nous faire part de vos retours, nous sommes à votre écoute pour améliorer votre expérience.</p>
+        
+            <label for="checkcontact" class="contactbutton"><div class="mail"></div></label><input id="checkcontact" type="checkbox">
+    
+            <form action="" method="post" class="contactform">
+                <p class="input_wrapper"><input type="text" name="contact_nom"  id ="contact_nom"><label for="contact_nom" >NAME</label></p>
+                <p class="input_wrapper"><input type="text" name="contact_email"  id ="contact_email" #adr><label for="contact_email">EMAIL</label></p>
+                <p class="input_wrapper"><input type="text" name="contact_sujet"  id ="contact_sujet" #sub><label for="contact_sujet" >SUBJECT</label></p>
+                <p class="textarea_wrapper"><textarea name="contact_message" id="contact_message" #mess></textarea></p>
+                <p class="submit_wrapper"><input type="submit" value="ENVOYER" (click)="onMessage(adr.value,sub.value,mess.value)"></p>			
+            </form>
+    </article>
+</section>
