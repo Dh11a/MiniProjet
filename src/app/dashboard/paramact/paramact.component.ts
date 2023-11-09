@@ -57,9 +57,6 @@ export class ParamactComponent implements OnInit {
         // If deletion is successful, remove the deleted activity from the local list
         this.lesActivites = this.lesActivites.filter(a => a.id !== activite.id);
       },
-      error => {
-        console.error('Error deleting activity:', error);
-      }
     );
   }
 }

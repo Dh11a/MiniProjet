@@ -9,6 +9,7 @@
       <td class="event-cell">
         <h3 class="event-title">{{ activite.nom }}</h3>
         <p class="event-date">{{ activite.date | date }}</p>
+        <p>{{ activite.id}}</p>
         <input type="button" value="Delete" class="delete-button" (click)="onDeleteActivite(activite)">
       </td>
     </tr>
