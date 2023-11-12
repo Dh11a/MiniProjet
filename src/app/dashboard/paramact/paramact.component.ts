@@ -14,6 +14,8 @@ export class ParamactComponent implements OnInit {
   lesActivites: Activite[] = [];
   originalActivites: Activite[] = []; // Store the original list of activities
   searchProjectName: string = '';
+  nom:string ='';
+  lieu:string ='';
 
   constructor(private router: Router, private loginService: LoginService, private activiteService: ActiviteService) {}
 
@@ -59,4 +61,11 @@ export class ParamactComponent implements OnInit {
       },
     );
   }
-}
+  ADDact(){
+    let act:Activite =new Activite(10,this.nom,"fff",50,new Date(24-10-2024),this.lieu);
+    this.activiteService.createActivity(act).subscribe(
+      data=>console.log(data)
+    );
+      
+    }
+  }
