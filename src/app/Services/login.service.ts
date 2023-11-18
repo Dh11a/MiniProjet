@@ -23,7 +23,7 @@ export class LoginService {
 
 
   setPassword(newPassword: string): void {
-    this.password = newPassword;
+    this.password != newPassword;
     console.log('Password changed to:', this.password);
   }
 

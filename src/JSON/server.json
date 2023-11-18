@@ -1,0 +1,140 @@
+{
+  "Admin": [
+    {
+      "login": "admin",
+      "password": "pwd"
+    }
+  ],
+  "Membres": [
+    {
+      "nom": "Ben Ali",
+      "prenom": "Mohamed",
+      "adresse": "10 Rue Habib Bourguiba, Tunis"
+    },
+    {
+      "nom": "Trabelsi",
+      "prenom": "Fatima",
+      "adresse": "25 Avenue de la République, Sousse"
+    },
+    {
+      "nom": "Bouazizi",
+      "prenom": "Ahmed",
+      "adresse": "8 Rue de la Liberté, Sidi Bouzid"
+    },
+    {
+      "nom": "Hajji",
+      "prenom": "Leila",
+      "adresse": "15 Boulevard Habib Thameur, Nabeul"
+    },
+    {
+      "nom": "Mzali",
+      "prenom": "Riadh",
+      "adresse": "30 Rue des Martyrs, Monastir"
+    },
+    {
+      "nom": "Khaldi",
+      "prenom": "Amira",
+      "adresse": "5 Avenue Farhat Hached, Bizerte"
+    },
+    {
+      "nom": "Chahed",
+      "prenom": "Nizar",
+      "adresse": "12 Rue Tahar Haddad, Mahdia"
+    },
+    {
+      "nom": "Jebali",
+      "prenom": "Amina",
+      "adresse": "18 Avenue Habib Bourguiba, Gafsa"
+    },
+    {
+      "nom": "Gannouchi",
+      "prenom": "Rached",
+      "adresse": "22 Rue Ibn Khaldoun, Gabès"
+    },
+    {
+      "nom": "Toumi",
+      "prenom": "Sarra",
+      "adresse": "40 Avenue Habib Thameur, Sfax"
+    }
+  ],
+  "Activites": [
+    {
+      
+      "nom": "Randonnée en montagne",
+      "prix": 30,
+      "date": "2023-11-18",
+      "lieu": "Montagnes de l'Atlas"
+    },
+    {
+      "id": 2,
+      "nom": "Cours de cuisine tunisienne",
+      "prix": 50,
+      "date": "2023-11-19",
+      "lieu": "École de cuisine tunisienne"
+    },
+    {
+      "id": 3,
+      "nom": "Visite guidée du musée de Carthage",
+      "prix": 15,
+      "date": "2023-11-20",
+      "lieu": "Musée de Carthage"
+    },
+    {
+      "id": 4,
+      "nom": "Cinéma en plein air à Hammamet",
+      "prix": 10,
+      "date": "2023-11-21",
+      "lieu": "Plage de Hammamet"
+    },
+    {
+      "id": 5,
+      "nom": "Concert de musique traditionnelle tunisienne",
+      "prix": 40,
+      "date": "2023-11-22",
+      "lieu": "Amphithéâtre romain de Dougga"
+    },
+    {
+      "id": 6,
+      "nom": "Exposition artistique à Tunis",
+      "prix": 20,
+      "date": "2023-11-23",
+      "lieu": "Galerie d'art moderne de Tunis"
+    },
+    {
+      "id": 7,
+      "nom": "Atelier de poterie à Nabeul",
+      "prix": 25,
+      "date": "2023-11-24",
+      "lieu": "Atelier de poterie de Nabeul"
+    },
+    {
+      "id": 8,
+      "nom": "Tour en bateau à Djerba",
+      "prix": 35,
+      "date": "2023-11-25",
+      "lieu": "Port de Houmt Souk"
+    },
+    {
+      "id": 9,
+      "nom": "Séance de yoga en plein air à Sidi Bou Said",
+      "prix": 15,
+      "date": "2023-11-26",
+      "lieu": "Falaise de Sidi Bou Said"
+    },
+    {
+      "id": 10,
+      "nom": "Soirée jeux de société à Tunis",
+      "prix": 5,
+      "date": "2023-11-27",
+      "lieu": "Café ludique de Tunis"
+    },
+    {
+      "id": 11,
+      "nom": "dhia",
+      "image": "description d'activité",
+      "prix": 50,
+      "date": "1969-12-31T23:59:57.990Z",
+      "lieu": "beja"
+    }
+  ]
+}

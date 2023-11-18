@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ActiviteService } from 'src/app/Services/activite.service';
 import { LoginService } from 'src/app/Services/login.service';
+import { MembreService } from 'src/app/Services/membre.service';
 import { Activite } from 'src/app/classes/activite';
+import { Membres } from 'src/app/classes/membres';
 
 @Component({
   selector: 'app-paramact',
@@ -16,8 +18,9 @@ export class ParamactComponent implements OnInit {
   searchProjectName: string = '';
   nom:string ='';
   lieu:string ='';
+  Membres : Membres[]=[];
 
-  constructor(private router: Router, private loginService: LoginService, private activiteService: ActiviteService) {}
+  constructor(private router: Router, private loginService: LoginService, private activiteService: ActiviteService , private memberservice:MembreService) {}
 
   ngOnInit(): void {
     this.activiteService.getActivities().subscribe(
@@ -62,10 +65,15 @@ export class ParamactComponent implements OnInit {
     );
   }
   ADDact(){
-    let act:Activite =new Activite(10,this.nom,"fff",50,new Date(24-10-2024),this.lieu);
+    let act:Activite =new Activite(Math.round(Math.random()),this.nom,"description d'activité",50,new Date(24-10-2024),this.lieu);
     this.activiteService.createActivity(act).subscribe(
       data=>console.log(data)
     );
-      
+    }
+
+    voirMembre(){
+      this.memberservice.getMembres().subscribe(
+        (data: Membres[]) => {this.Membres = data;}
+      );
     }
   }

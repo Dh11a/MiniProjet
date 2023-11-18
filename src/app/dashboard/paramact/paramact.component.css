@@ -1,14 +1,18 @@
 .center-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    vertical-align:baseline;
     font-family: Oswald ,sans-serif;
+
+}
+.search-bar {
+  font-family: Oswald ,sans-serif;
+  display:flex;
+  margin-top: 10px;
 
 }
 
 .event-table {
     margin-top: 30px;
-    width: 80%;
+    width: 100%;
     border-collapse: collapse;
     font-family: Oswald ,sans-serif;
 }
@@ -46,7 +50,7 @@
 .search-container {
     position: absolute;
     top: 90px;
-    right: 20px;
+    right: 0px;
     display: flex;
     align-items: center;
     font-family: Oswald ,sans-serif;

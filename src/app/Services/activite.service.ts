@@ -19,7 +19,7 @@ export class ActiviteService {
 
   // Method to create a new activity on the server
   createActivity(activity: Activite): Observable<Activite> {
-    return this.http.post<Activite>(URL, activity);
+    return this.http.post<Activite>(URL,activity);
   }
 
   // Method to update an existing activity on the server
