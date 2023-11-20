@@ -9,6 +9,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { loginGuard } from './Services/login.guard';
 import { ParamactComponent } from './dashboard/paramact/paramact.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
+import { ActiviteinfosComponent } from './nav/activiteinfos/activiteinfos.component';
+import { AjouteractiviteComponent } from './dashboard/paramact/ajouteractivite/ajouteractivite.component';
+import { ModifieractiviteComponent } from './dashboard/paramact/modifieractivite/modifieractivite.component';
+import { ListadminactviteComponent } from './listadminactvite/listadminactvite.component';
 
 const routes: Routes = [
   {path:'accueil',title:"Accueil",component:AccueilComponent},
@@ -16,13 +20,24 @@ const routes: Routes = [
   {path:'calendrier',title:'Calendrier',component:CalendrierComponent},
   {path:'dashboard',title:'Dashboard',component:DashboardComponent,canActivate:[loginGuard],
   children:[
-    {path:"paramact",title:"admin",component:ParamactComponent},
+    {path:"paramact",title:"admin",component:ParamactComponent,
+  children:[
+    {path:"listeadmin",title:"listeadmin",component:ListadminactviteComponent},
+    {path:"ajouter",title:"ajouter",component:AjouteractiviteComponent},
+    {path:"modifier",title:"modifier",component:ModifieractiviteComponent},
+    {path:'',redirectTo:'listeadmin',pathMatch:'full'},
+    {path:'**',redirectTo:'listeadmin',pathMatch:"full"}
+    
+  ]},
     {path:"profile",title:"admin",component:ProfileComponent},
     {path:'',redirectTo:'paramact',pathMatch:'full'},
     {path:'**',redirectTo:'paramact',pathMatch:"full"}
   ]},
   {path:'login',title:'Authentification',component:LoginComponent},
-  {path:'listeactivite',title:'Listeactivite',component:ListeactiviteComponent},
+  {path:'listeactivite',title:'Listeactivite',component:ListeactiviteComponent,
+children:[
+  {path:'info',title:"Activiteinfo",component:ActiviteinfosComponent},
+]},
   {path:'',redirectTo:'accueil',pathMatch:'full'},
   {path:'**',redirectTo:'accueil',pathMatch:"full"}
   

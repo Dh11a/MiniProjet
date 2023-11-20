@@ -12,7 +12,11 @@ import { ListeactiviteComponent } from './nav/listeactivite/listeactivite.compon
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ParamactComponent } from './dashboard/paramact/paramact.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ActiviteinfosComponent } from './nav/activiteinfos/activiteinfos.component';
+import { AjouteractiviteComponent } from './dashboard/paramact/ajouteractivite/ajouteractivite.component';
+import { ModifieractiviteComponent } from './dashboard/paramact/modifieractivite/modifieractivite.component';
+import { ListadminactviteComponent } from './listadminactvite/listadminactvite.component';
 
 
 @NgModule({
@@ -26,13 +30,19 @@ import { FormsModule } from '@angular/forms';
     ListeactiviteComponent,
     DashboardComponent,
     ParamactComponent,
-    ProfileComponent
+    ProfileComponent,
+    ActiviteinfosComponent,
+    AjouteractiviteComponent,
+    ModifieractiviteComponent,
+    ListadminactviteComponent,
+    ModifieractiviteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,85 @@
+.center-container {
+    vertical-align:baseline;
+    font-family: Oswald ,sans-serif;
+
+}
+
+.menuact{
+  display:flex;
+  align-items: stretch;
+  margin-left: 5px;
+}
+
+.event-table {
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Oswald ,sans-serif;
+}
+
+.event-row {
+    background-color: #ffffff;
+    font-family: Oswald ,sans-serif;
+}
+
+.event-cell {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+    font-family: Oswald ,sans-serif;
+}
+
+.delete-button {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    transform: translateY(-50%);
+    background-color: #F2385A;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Oswald ,sans-serif;
+}
+
+.delete-button:hover {
+    background-color: #cc0000;
+}
+.search-container {
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    font-family: Oswald ,sans-serif;
+  }
+  
+  .search-input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    font-family: Oswald ,sans-serif;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #F2385A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Oswald ,sans-serif;
+  }
+  
+  .search-button:hover {
+    background-color: #892134;
+  }
+
+  
+  

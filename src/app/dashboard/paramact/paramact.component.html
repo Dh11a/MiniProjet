@@ -1,32 +1,10 @@
-<div class="center-container">
-  <div class="search-container">
-    
-    <input [(ngModel)]="searchProjectName" placeholder="Search by project name" class="search-input">
-    <button class="search-button" (click)="searchActivite()">Search</button>
-      
-  </div>
-  <div class="search-bar">
-    Nom Activité: <input [(ngModel)]="nom" type="text" name="nom" class="search-input" >
-    Lieu Activité: <input [(ngModel)]="lieu" type="text" name="lieu" class="search-input">
-    <button (click)="ADDact()" class="search-button">Ajouter</button>
-  </div>
-  
-
-  <table class="event-table">
-    <tr *ngFor="let activite of lesActivites" class="event-row">
-      <td class="event-cell">
-        <h3 class="event-title">{{ activite.nom }}</h3>
-        <p class="event-date">{{ activite.date | date }}</p>
-        <p>{{ activite.id}}</p>
-        <input type="button" value="Supprimer" class="delete-button" (click)="onDeleteActivite(activite)">
-        <input type="button" value="Liste Membres" class="sectionheader" (click)="voirMembre()">
-        <div *ngFor="let membres of Membres">
-          Nom : {{membres.nom}} -- Prénom : {{membres.prenom}} -- Adresse : {{membres.adresse}}
-        </div>
-      </td>
-    </tr>
-    
-  </table>
+<div class="menuact">
+  <a style="margin-left: 40%;"><input type="button" class="centered-inputnk" value="Liste des Activités" routerLink="/dashboard/paramact/listeadmin"></a>
+  <a ><input type="button" class="centered-inputnk" value="Ajouter" routerLink="/dashboard/paramact/ajouter"></a>
+  <a ><input type="button" class="centered-inputnk" value="Modifier" routerLink="/dashboard/paramact/modifier"></a>
 </div>
+<router-outlet></router-outlet>
+
+
 
 

@@ -27,7 +27,6 @@
 .groupe input {
     padding: 10px;
     border: 1px solid #c9c9c9;
-    border-radius: 5px;
     outline-color: gray;
     width: 200px; /* Adjust the width as needed */
 }
@@ -55,7 +54,7 @@
 body{
   background: #F0F0F0;
   font-family: Open Sans ,sans-serif;
-  line-height:1.5em;
+  line-height:1em;
 }
 #contact {
 width: 500px;
@@ -73,7 +72,6 @@ bottom: 0;
 position: absolute;
 -webkit-box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.19);
 box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.19);
-border-radius: 100%;
 z-index: -1;
 }
 #contact article {
@@ -107,55 +105,8 @@ margin-top: 22px;
 margin-left: 2px;
 margin-bottom: 0px;
 }
-.mail {
-margin-top: 11px;
-font-size: 15px;
-display: inline-block;
-border-top: 2em solid transparent;
-border-left: 2.6em solid #832032;
-height: 0;
-width: 0;
-position: relative;
-}
-.mail:before {
-content: '';
-top: -2.5em;
-left: -2.95em;
-display: block;
-position: absolute;
-border-top: 1.2em solid #832032;
-border-left: 1.6em solid transparent;
-border-right: 1.6em solid transparent;
-border-bottom: 1em solid transparent;
-font-size: 0.8em;
-}
-.mail::after {
-display: block;
-content: "";
-position: absolute;
-border-top: 2em solid transparent;
-border-right: 2.6em solid #832032;
-height: 0;
-width: 0;
-left: -2.18em;
-bottom: 0;
-}
-#checkcontact{
-position: absolute;
-left: -9999px;
-}
-.contactform {
-overflow: hidden;
-max-height: 0px;
--webkit-transition: all linear 1s;
--moz-transition: all linear 1s;
--o-transition: all linear 1s;
--ms-transition: all linear 1s;
-transition: all linear 1s;
-}
-#checkcontact:checked + .contactform {
-max-height: 1000px;
-}
+
+
 .input_wrapper {
 position: relative;
 }
@@ -179,7 +130,7 @@ position: relative;
     text-indent: 15%;
     }
     .input_wrapper input[type="password"] {
-        margin-top: 1em;
+        margin-top:1em;
         display: block;
         width: 100%;
         background: white;
@@ -227,7 +178,7 @@ line-height: 2.8em;
 -ms-transition: all 250ms ease;
 -o-transition: all 250ms ease;
 transition: all 250ms ease;
-border-radius: 5px;
+
 }
 
 .input_wrapper input[type="text"]:focus + label {
@@ -241,7 +192,7 @@ left: 85%;
 width: 100%;
 }
   .input_wrapper label {
-line-height: 3.5em;
+line-height: 3.6em;
 font-size: 0.8em;
 }
 }

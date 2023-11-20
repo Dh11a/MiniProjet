@@ -59,9 +59,10 @@
   ],
   "Activites": [
     {
-      
+      "id": 1,
       "nom": "Randonnée en montagne",
       "prix": 30,
+      "image": "assets/1294371.jpg",
       "date": "2023-11-18",
       "lieu": "Montagnes de l'Atlas"
     },
@@ -69,6 +70,7 @@
       "id": 2,
       "nom": "Cours de cuisine tunisienne",
       "prix": 50,
+      "image": "assets/randonnee1.jpg",
       "date": "2023-11-19",
       "lieu": "École de cuisine tunisienne"
     },
@@ -76,20 +78,15 @@
       "id": 3,
       "nom": "Visite guidée du musée de Carthage",
       "prix": 15,
+      "image": "assets/1294371.jpg",
       "date": "2023-11-20",
       "lieu": "Musée de Carthage"
-    },
-    {
-      "id": 4,
-      "nom": "Cinéma en plein air à Hammamet",
-      "prix": 10,
-      "date": "2023-11-21",
-      "lieu": "Plage de Hammamet"
     },
     {
       "id": 5,
       "nom": "Concert de musique traditionnelle tunisienne",
       "prix": 40,
+      "image": "assets/1294371.jpg",
       "date": "2023-11-22",
       "lieu": "Amphithéâtre romain de Dougga"
     },
@@ -97,6 +94,7 @@
       "id": 6,
       "nom": "Exposition artistique à Tunis",
       "prix": 20,
+      "image": "assets/1294371.jpg",
       "date": "2023-11-23",
       "lieu": "Galerie d'art moderne de Tunis"
     },
@@ -104,6 +102,7 @@
       "id": 7,
       "nom": "Atelier de poterie à Nabeul",
       "prix": 25,
+      "image": "assets/1294371.jpg",
       "date": "2023-11-24",
       "lieu": "Atelier de poterie de Nabeul"
     },
@@ -111,6 +110,7 @@
       "id": 8,
       "nom": "Tour en bateau à Djerba",
       "prix": 35,
+      "image": "assets/1294371.jpg",
       "date": "2023-11-25",
       "lieu": "Port de Houmt Souk"
     },
@@ -118,6 +118,7 @@
       "id": 9,
       "nom": "Séance de yoga en plein air à Sidi Bou Said",
       "prix": 15,
+      "image": "assets/1294371.jpg",
       "date": "2023-11-26",
       "lieu": "Falaise de Sidi Bou Said"
     },
@@ -125,16 +126,25 @@
       "id": 10,
       "nom": "Soirée jeux de société à Tunis",
       "prix": 5,
+      "image": "assets/1294371.jpg",
       "date": "2023-11-27",
       "lieu": "Café ludique de Tunis"
     },
     {
-      "id": 11,
-      "nom": "dhia",
-      "image": "description d'activité",
-      "prix": 50,
-      "date": "1969-12-31T23:59:57.990Z",
-      "lieu": "beja"
+      "nom": "barc",
+      "image": "C:\\fakepath\\wallpaperflare.com_wallpaper (3).jpg",
+      "prix": "1990",
+      "date": "oct 04,1920",
+      "lieu": "ariana",
+      "id": 13
+    },
+    {
+      "nom": "real",
+      "image": "C:\\Users\\msi\\Desktop\\MiniProjet\\src\\assets\\logo.png",
+      "prix": "1933",
+      "date": "sept 30,2003",
+      "lieu": "darna",
+      "id": 14
     }
   ]
 }

@@ -15,7 +15,7 @@ export class LoginComponent {
 
     }
     else{
-      alert('Erreur 404');
+      alert("Erreur, Veuillez verifier l'adresse ou le mot de passe !!");
     }
 }
 onRetourne(){

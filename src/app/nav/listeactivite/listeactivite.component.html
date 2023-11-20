@@ -1,10 +1,18 @@
 <app-menu></app-menu>
-<ul>
-    <li *ngFor="let A of lesActivites" style="list-style-type: none;align-items: stretch;">
-       <div class="box">
-         <img [src]="A.image" alt="{{A.nom}}" class="img">
-         <h3 class="title">{{A.nom}}</h3>
-         <p class="date">{{A.date|date}}</p>
-       </div>
-    </li>
-</ul>
+<div class="container">
+  <div *ngFor="let A of lesActivites" class="card">
+    <div class="card-img">
+      <img [src]="A.image" alt="{{A.nom}}" class="event-image">
+    </div>
+    <div class="card-body">
+      <h3 class="event-name">{{A.nom}}</h3>
+      <p class="event-date">{{A.date | date }}</p>
+      <a ><input type="button" class="info-button" value="Infos" routerLink="/listeactivite/info" ></a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
