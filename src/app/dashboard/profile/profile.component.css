@@ -4,7 +4,7 @@
 form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: center; 
 }
 
 div {
@@ -14,6 +14,7 @@ div {
 }
 
 label {
+  margin-top: 10px;
   margin-bottom: 5px;
   font-family: Oswald, sans-serif;
   width: 250px; 
@@ -43,4 +44,11 @@ button {
 button:hover {
   background-color: rgb(114,21,21);
   font-family: Oswald, sans-serif;
+}
+
+.card{
+  width:400px;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 37%;
 }

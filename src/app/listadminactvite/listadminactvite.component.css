@@ -174,8 +174,10 @@ input.ng-invalid {
 }
 
 .event-image {
-  max-width: 150px; 
-  margin-right: 20px; 
+  max-width: 150px;
+  margin-right: 20px;
+  border: solid 2px red ;
+  border-radius: 3px;
 }
 
 .event-details {

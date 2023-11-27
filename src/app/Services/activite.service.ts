@@ -3,8 +3,10 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Activite } from '../classes/activite';
 import { Membres } from '../classes/membres';
+import { Contact } from '../classes/contact';
 
 const URL = "http://localhost:3000/Activites";
+const URL1 = "http://localhost:3000/Commentaires";
 
 @Injectable({
   providedIn: 'root'
@@ -38,6 +40,14 @@ export class ActiviteService {
   }
   addMember(newEvent: Membres): Observable<Membres> {
     return this.http.post<Membres>(URL, newEvent);
+  }
+
+  createMessage(message:Contact): Observable<Contact> {
+    return this.http.post<Contact>(URL1,message);
+  }
+
+  getMessages(): Observable<Contact[]> {
+    return this.http.get<Contact[]>(URL1);
   }
 }
 

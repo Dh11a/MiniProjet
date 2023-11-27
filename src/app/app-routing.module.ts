@@ -10,6 +10,7 @@ import { ProfileComponent } from './dashboard/profile/profile.component';
 import { ListadminactviteComponent } from './listadminactvite/listadminactvite.component';
 import { InfoComponent } from './nav/listeactivite/info/info.component';
 import { AboutusComponent } from './nav/aboutus/aboutus.component';
+import { MessagesComponent } from './dashboard/messages/messages.component';
 
 const routes: Routes = [
   { path: 'accueil', title: 'Accueil', component: AccueilComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
     children: [
       { path: 'listeadmin', title: 'listeadmin', component: ListadminactviteComponent },
       { path: 'profile', title: 'admin', component: ProfileComponent },
+      { path: 'messages', title: 'messages', component: MessagesComponent},
       { path: '', redirectTo: 'listeadmin', pathMatch: 'full' },
       { path: '**', redirectTo: 'listeadmin', pathMatch: 'full' }
     ]

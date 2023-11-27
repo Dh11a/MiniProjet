@@ -1,6 +1,31 @@
 <app-menu></app-menu>
-<div class="banner">
-  <img src="../../../assets/WhatsApp Image 2023-11-03 at 22.59.29.jpeg" alt="">
+<table class="container">
+  <tr>
+  <td>
+    <div class="card">
+      <iframe src="https://assets.pinterest.com/ext/embed.html?id=775674735845276224" height="100%" width="300" frameborder="0" scrolling="no" ></iframe>
+    </div>
+  </td>
+  <td>
+    <div class="card">
+      <iframe src="https://assets.pinterest.com/ext/embed.html?id=5770305766178076" height="100%" width="300" frameborder="0" scrolling="no" ></iframe>
+    </div>
+  </td>
+  <td>
+    <div class="card">
+      <iframe src="https://assets.pinterest.com/ext/embed.html?id=669277194632255093" id="vid" height="100%" width="300" frameborder="0" scrolling="no" ></iframe>
+    </div>
+  </td>
+  <td>
+    <div class="card">
+      <iframe src="https://assets.pinterest.com/ext/embed.html?id=484418503681770556" id="vid" height="100%" width="300" frameborder="0" scrolling="no" ></iframe>
+    </div>
+  </td>
+  </tr>
+</table>
+<div class="joke">
+  <p *ngIf="joke">{{ joke.setup }}</p>
+  <p *ngIf="joke">{{ joke.punchline }}</p>
 </div>
 <div class="dis">
   <p>Bienvenue chez les Aventuriers de l'Aventure !</p>
@@ -8,8 +33,4 @@
   <p>Avec notre passion pour l'aventure, nous organisons des campements écologiques, des randonnées, et des activités en plein air.</p>
   <p>Rejoignez notre club pour explorer des lieux cachés, préserver l'environnement, et créer des souvenirs inoubliables.</p>
   <p>Prêt à vivre l'aventure ?</p>
-</div>
-<div class="joke">
-  <p *ngIf="joke">{{ joke.setup }}</p>
-  <p *ngIf="joke">{{ joke.punchline }}</p>
 </div>

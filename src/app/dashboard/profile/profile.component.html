@@ -1,15 +1,17 @@
 <router-outlet></router-outlet>
+<div class="card">
+  <form [formGroup]="passwordForm" (ngSubmit)="onChangePassword()">
+    <div>
+      <label for="newPassword">New Password:</label>
+      <input formControlName="newPassword" type="password" placeholder="New Password">
+    </div>
+    <div>
+      <label for="confirmPassword">Confirm Password:</label>
+      <input formControlName="confirmPassword" type="password" placeholder="Confirm Password">
+    </div>
+    <div>
+      <button type="submit">Valider</button>
+    </div>
+  </form>
+</div>
 
-<form [formGroup]="passwordForm" (ngSubmit)="onChangePassword()">
-  <div>
-    <label for="newPassword">New Password</label>
-    <input formControlName="newPassword" type="password" placeholder="New Password">
-  </div>
-  <div>
-    <label for="confirmPassword">Confirm Password</label>
-    <input formControlName="confirmPassword" type="password" placeholder="Confirm Password">
-  </div>
-  <div>
-    <button type="submit">Valider</button>
-  </div>
-</form>

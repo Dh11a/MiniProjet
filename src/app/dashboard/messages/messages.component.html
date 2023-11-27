@@ -1,0 +1,23 @@
+
+<router-outlet></router-outlet>
+<div class="card" *ngFor="let message of lesmessages" >
+    <div class="info-container">
+      <p class="info-label">Nom:</p>
+      <p class="info-value">{{ message.nom | dhia }}</p>
+    </div>
+  
+    <div class="info-container">
+      <p class="info-label">Mail:</p>
+      <p class="info-value">{{ message.email }}</p>
+    </div>
+  
+    <div class="info-container">
+      <p class="info-label">Sujet:</p>
+      <p class="info-value">{{ message.subject }}</p>
+    </div>
+  
+    <div class="info-container">
+      <p class="info-label">Commentaire:</p>
+      <p class="info-value">{{ message.message }}</p>
+    </div>
+  </div>

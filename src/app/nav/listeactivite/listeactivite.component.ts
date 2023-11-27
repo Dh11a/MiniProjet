@@ -4,7 +4,6 @@ import { Router } from '@angular/router';
 import { ActiviteService } from 'src/app/Services/activite.service';
 
 import { Activite } from 'src/app/classes/activite';
-const URL="http://localhost:3000/Activites";
 @Component({
   selector: 'app-listeactivite',
   templateUrl: './listeactivite.component.html',

@@ -1,6 +1,7 @@
 .admin {
     text-align: center;
     margin-top: 5%;
+    font-family: Oswald ,sans-serif;
 }
 
 .admin h2 {
@@ -16,11 +17,12 @@
 }
 
 .groupe label {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .groupe i {
-    padding: 10px;
+    padding: 5px;
+    padding-top: 6px;
     color: #FFF;
 }
 
@@ -41,7 +43,7 @@
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     margin-left: 5px;
 }
 
@@ -178,6 +180,7 @@ line-height: 2.8em;
 -ms-transition: all 250ms ease;
 -o-transition: all 250ms ease;
 transition: all 250ms ease;
+border-radius: 5px
 
 }
 
@@ -195,4 +198,8 @@ width: 100%;
 line-height: 3.6em;
 font-size: 0.8em;
 }
+}
+
+body{
+    font-family: Oswald ,sans-serif;
 }

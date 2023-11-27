@@ -16,6 +16,7 @@ import { InfoComponent } from './nav/listeactivite/info/info.component';
 import { AboutusComponent } from './nav/aboutus/aboutus.component';
 import { AhmedPipe } from './pipes/ahmed.pipe';
 import { DhiaPipe } from './pipes/dhia.pipe';
+import { MessagesComponent } from './dashboard/messages/messages.component';
 
 
 
@@ -33,7 +34,8 @@ import { DhiaPipe } from './pipes/dhia.pipe';
     InfoComponent,
     AboutusComponent,
     AhmedPipe,
-    DhiaPipe
+    DhiaPipe,
+    MessagesComponent
   
   ],
   imports: [
