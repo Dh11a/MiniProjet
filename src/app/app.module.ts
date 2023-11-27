@@ -6,17 +6,17 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './nav/menu/menu.component';
 import { AccueilComponent } from './nav/accueil/accueil.component';
 import { ContactComponent } from './nav/contact/contact.component';
-import { CalendrierComponent } from './nav/calendrier/calendrier.component';
 import { LoginComponent } from './nav/login/login.component';
 import { ListeactiviteComponent } from './nav/listeactivite/listeactivite.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { ParamactComponent } from './dashboard/paramact/paramact.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ActiviteinfosComponent } from './nav/activiteinfos/activiteinfos.component';
-import { AjouteractiviteComponent } from './dashboard/paramact/ajouteractivite/ajouteractivite.component';
-import { ModifieractiviteComponent } from './dashboard/paramact/modifieractivite/modifieractivite.component';
 import { ListadminactviteComponent } from './listadminactvite/listadminactvite.component';
+import { InfoComponent } from './nav/listeactivite/info/info.component';
+import { AboutusComponent } from './nav/aboutus/aboutus.component';
+import { AhmedPipe } from './pipes/ahmed.pipe';
+import { DhiaPipe } from './pipes/dhia.pipe';
+
 
 
 @NgModule({
@@ -25,17 +25,16 @@ import { ListadminactviteComponent } from './listadminactvite/listadminactvite.c
     MenuComponent,
     AccueilComponent,
     ContactComponent,
-    CalendrierComponent,
     LoginComponent,
     ListeactiviteComponent,
     DashboardComponent,
-    ParamactComponent,
     ProfileComponent,
-    ActiviteinfosComponent,
-    AjouteractiviteComponent,
-    ModifieractiviteComponent,
     ListadminactviteComponent,
-    ModifieractiviteComponent
+    InfoComponent,
+    AboutusComponent,
+    AhmedPipe,
+    DhiaPipe
+  
   ],
   imports: [
     BrowserModule,

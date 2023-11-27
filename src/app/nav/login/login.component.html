@@ -1,17 +1,24 @@
 <div class="admin">
     <h2>Espace d'administration</h2>
-    <form id="admin-form">
-        <div class="groupe">
-            <p class="input_wrapper"><input type="text" name="contact_nom"  id ="contact_nom" #admin><label for="contact_nom"><i class="fas fa-user"></i></label></p>
-        </div>
-        
-        <div class="groupe">
-            <p class="input_wrapper"><input type="password" name="contact_email"  id ="contact_email" #pwd><label for="contact_email"><i class="fas fa-lock"></i></label></p>
-        </div>
-        
-        <div class="button-group">
-            <input type="button" value="Se connecter" (click)="onAuthentifie(admin.value,pwd.value)">
-            <input type="button" value="Retourner à l'Accueil" (click)="onRetourne()">
-        </div>
+    <form [formGroup]="adminForm" id="admin-form">
+      <div class="groupe">
+        <p class="input_wrapper">
+          <input type="text" formControlName="username" >
+          <label for="username"><i class="fas fa-user"></i></label>
+        </p>
+      </div>
+  
+      <div class="groupe">
+        <p class="input_wrapper">
+          <input type="password" formControlName="pass">
+          <label for="password"><i class="fas fa-lock"></i></label>
+        </p>
+      </div>
+  
+      <div class="button-group">
+        <input type="button" value="Se connecter" (click)="onAuthentifie()">
+        <input type="button" value="Retourner à l'Accueil" (click)="onRetourne()">
+      </div>
     </form>
-</div>
+  </div>
+  

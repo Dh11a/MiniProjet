@@ -28,7 +28,7 @@
     padding: 10px;
     border: 1px solid #c9c9c9;
     outline-color: gray;
-    width: 200px; /* Adjust the width as needed */
+    width: 200px; 
 }
 
 .button-group {
@@ -37,7 +37,7 @@
 
 .button-group input[type="button"] {
     padding: 10px 20px;
-    background-color: #F2385A;
+    background-color:red;
     color: white;
     border: none;
     cursor: pointer;
@@ -46,7 +46,7 @@
 }
 
 .button-group input[type="button"]:hover {
-    background-color: #F2385A;
+    background-color:red;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
@@ -78,7 +78,7 @@ z-index: -1;
   padding: 1em;
 }
 #contact h1 {
-background: #F2385A;
+background:red;
 font-family: Oswald ,sans-serif;
 font-size: 1.75em;
 padding: 0.6em 0 0.6em 0.4em;
@@ -87,7 +87,7 @@ text-shadow: 0 0.06em 0 #424242;
 position: relative;
 }
 .contactbutton {
-background: #F2385A;
+background:red;
 -webkit-box-shadow: 1px 1px 0 0 #832032,2px 2px 0 0 #832032,3px 3px 0 0 #832032;
 box-shadow: 1px 1px 0 0 #832032,2px 2px 0 0 #832032,3px 3px 0 0 #832032;
 text-align: center;
@@ -166,7 +166,7 @@ position: absolute;
 left: 0;
 top: 23%;
 height: 77%;
-background: #F2385A;
+background:red;
 color: white;
 font-family: Oswald ,sans-serif;
 box-sizing: border-box;

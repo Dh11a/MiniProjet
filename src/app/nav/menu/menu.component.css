@@ -34,7 +34,7 @@ li a {
     margin-right: 30px;}
 img {
     margin-top: 20px;
-    margin-left: 300px;
+    margin-left: 400px;
     width:90px;
      height:90px;
 }
@@ -46,7 +46,7 @@ img {
 .button-group input[type="button"] {
     margin-left: 5px;
     padding: 15px 30px;
-    background-color: #F2385A;
+    background-color: red;
     color: white;
     border: none;
     cursor: pointer;
@@ -55,5 +55,11 @@ img {
 }
 
 .button-group input[type="button"]:hover {
-    background-color: #F2385A;
+    background-color: red;
+}
+.separation{
+    margin-top: 5px;
+    height: 3px;
+    width: auto;
+    border:solid 3px red;
 }

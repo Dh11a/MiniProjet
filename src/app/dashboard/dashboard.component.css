@@ -39,7 +39,7 @@ img {
 .button-group input[type="button"] {
     margin-left: 5px;
     padding: 15px 30px;
-    background-color: #F2385A;
+    background-color: red;
     color: white;
     border: none;
     cursor: pointer;
@@ -48,7 +48,7 @@ img {
 }
 
 .button-group input[type="button"]:hover {
-    background-color: #F2385A;
+    background-color: red;
 }
 .box {
     border: 1px solid #ddd;
@@ -83,7 +83,7 @@ img {
    .dec-button{
     margin-left: 5px;
     padding: 15px 30px;
-    background-color: #F2385A;
+    background-color: red;
     color: white;
     border: none;
     cursor: pointer;
@@ -92,6 +92,6 @@ img {
   }
 
   .dec-button:hover {
-    background-color: #892134;
+    background-color: rgb(114,21,21);
   }
 

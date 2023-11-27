@@ -1,0 +1,52 @@
+<app-menu></app-menu>
+<div *ngFor="let A of lesAct" class="activity-container">
+    <div *ngIf="idActivite==A.id" class="activity-content">
+        <div class="image-container">
+            <img [src]="A.image" alt="Activity Image">
+        </div>
+        <div class="details-container">
+            <ul style="list-style-type: none;">
+                <li><div class="activity-title">{{A.id}}• {{ A.nom |ahmed }}</div></li>
+                    <li><div class="separation"></div></li>
+                <li><div class="activity-date">{{ A.date | date }}</div></li>
+                    <li><div class="barseparation"></div></li>
+                <li><div class="activity-location">{{ A.lieu }}</div></li>
+                    <li><div class="barseparation"></div></li>
+                <li><div class="activity-price">{{ A.prix }} DT</div></li>
+                    <li><div class="barseparation"></div></li>
+                <li><div class="activity-availability">{{ A.disponible ? 'Disponible' : 'Non disponible' }}</div></li>
+                    <li><div class="barseparation"></div></li>
+                <li><div class="activity-availability">{{ A.membre ? '':'Pas de membres' }}</div></li>
+                    <li><div class="barseparation"></div></li>
+            </ul>
+            <div class="return-button">
+                <input type="button" value="Participer" class="membre-button" (click)="membre()">
+                <input type="button" value="Retourner" class="retourne-button" (click)="onReturn()">
+            </div>
+
+        </div>
+    </div>
+    <div class="member-form" *ngIf="Memberform" >
+        <div class="search-bar">
+          <h1 style="font-family: Oswald, sans-serif;">Participer à l'Activité :</h1><br>
+            <form [formGroup]="membreForm" (ngSubmit)="onSubmit()">
+                <label for="nom">Nom:</label><br>
+                <input type="text" id="nom" formControlName="nom" class="form-control"><br>
+                <div *ngIf="" class="alert alert-danger">
+                  le nom doit commence par une lettre majuscule et de minimum de 3 catactères ! 
+                </div>
+                <label for="prenom">Prenom:</label><br>
+                <input type="text" id="prenom" formControlName="prenom" class="form-control"><br>
+                <div *ngIf="" class="alert alert-danger">
+                  le nom doit commence par une lettre majuscule et de minimum de 3 catactères ! 
+                </div>
+                <label for="Adresse">Adresse:</label><br>
+                <input type="text" id="Adresse" formControlName="adresse" class="form-control"><br>
+                <div *ngIf="" class="alert alert-danger">
+                </div>
+                <input type="submit" class="search-button" value="Participer">
+                <input type="submit" value="Retourner" class="search-button">
+                
+            </form>
+        </div>
+</div>

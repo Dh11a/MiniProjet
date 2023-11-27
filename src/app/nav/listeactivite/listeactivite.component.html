@@ -1,18 +1,18 @@
 <app-menu></app-menu>
+<div class="search-container">
+  <input [(ngModel)]="searchProjectnom" placeholder="Nom d' activité" class="search-input" style="margin-left: 40%;">
+  <button class="search-button" (click)="searchActivite()">Search</button>
+</div>
 <div class="container">
   <div *ngFor="let A of lesActivites" class="card">
     <div class="card-img">
-      <img [src]="A.image" alt="{{A.nom}}" class="event-image">
+      <img [src]="A.image" alt="{{A.nom }}" class="event-image">
     </div>
     <div class="card-body">
-      <h3 class="event-name">{{A.nom}}</h3>
+      <h3 class="event-name">{{A.nom |dhia}}</h3>
       <p class="event-date">{{A.date | date }}</p>
-      <a ><input type="button" class="info-button" value="Infos" routerLink="/listeactivite/info" ></a>
+      <a [routerLink]="['/listeactivite',A.id]"><input type="button" class="info-button" value="Infos"></a>
       
     </div>
   </div>
 </div>
-
-
-
-

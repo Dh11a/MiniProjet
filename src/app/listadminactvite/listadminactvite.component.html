@@ -1,25 +1,103 @@
 <div class="center-container">
     <div class="search-container">
       
-      <input [(ngModel)]="searchProjectName" placeholder="Search by project name" class="search-input">
+      <input [(ngModel)]="searchProjectId" placeholder="Search by project id" class="search-input">
       <button class="search-button" (click)="searchActivite()">Search</button>
+      <input type="button" value="ajouter" (click)="ajouteform()" class="ajouter-button">
       
     </div>
     <table class="event-table">
       <tr *ngFor="let activite of lesActivites" class="event-row">
         <td class="event-cell">
-          <h3 class="event-title">{{ activite.nom }}</h3>
-          <p>Id: {{ activite.id}}</p>
-          <p class="event-date">{{ activite.date | date }}</p>
-        
-          <p>Prix: {{ activite.prix}}</p>
-          <input type="button" value="Supprimer" class="delete-button" (click)="onDeleteActivite(activite)">
-          <input type="button" value="Liste Membres" class="sectionheader" (click)="voirMembre()">
-          <div *ngFor="let membres of Membres">
-            Nom : {{membres.nom}} -- Prénom : {{membres.prenom}} -- Adresse : {{membres.adresse}}
+          <div class="event-content">
+            <img [src]="activite.image" alt="{{activite.nom}}" class="event-image">
+            <div class="event-details">
+              <h3 class="event-title">{{ activite.nom }}</h3>
+              <p>Id: {{ activite.id}}</p>
+              <p class="event-date">{{ activite.date | date }}</p>
+              <p>lieu: {{ activite.lieu}}</p>
+              <p [ngClass]="{ 'is-green': activite.disponible, 'is-red': !activite.disponible }">Disponibilité: {{activite.disponible}}</p>
+              <p>Prix: {{ activite.prix}}</p>
+              <input type="button" value="Supprimer" class="delete-button" (click)="onDeleteActivite(activite)">
+              <input type="button" value="Modify" class="modify-button" (click)="Modifierform(activite)">
+              <input type="button" value="Liste Membres" class="search-button">
+            </div>
+          </div>
+          <div *ngFor="let membres of activite.membre">
+            Nom : {{membres.nom}} 
           </div>
         </td>
       </tr>
-      
     </table>
-  </div>
+</div>    
+  <div class="modify-form" *ngIf="Modifyform" >
+    <div class="search-bar">
+      <h1 style="font-family: Oswald, sans-serif;">Modifier une activité :</h1><br>
+        <form [formGroup]="activiteForm" (ngSubmit)="onSubmitFormm()">
+            <label for="nom">Nom Activité:</label><br>
+            <input type="text" id="nom" formControlName="nom" class="search-input" [ngClass]="{ 'is-invalid': Nom?.invalid && Nom?.dirty }"><br>
+            <div *ngIf="Nom?.invalid && Nom?.dirty" class="alert alert-danger">
+              le nom doit commence par une lettre majuscule et de minimum de 3 catactères ! 
+            </div>
+            <label for="image">Image:</label><br>
+            <input type="text" id="image" formControlName="image" class="search-input" [ngClass]="{ 'is-invalid': isValidPattern() }"><br>
+            <div *ngIf="isValidPattern()" class="alert alert-danger">
+              le nom d'image doit commence par une lettre miniscule ensuite un point et de max de 4 caractéres  ! <br>
+              exemple:ahmed.jpg
+            </div>
+            <label for="prix">Prix:</label><br>
+            <input type="text" id="prix" formControlName="prix" class="search-input" [ngClass]="{ 'is-invalid': isValidPrix() && Prix?.invalid && Prix }"><br>
+            <div *ngIf="isValidPrix() && Prix?.invalid && Prix" class="alert alert-danger">
+              le prix est un champ obligatoire doit être suprieur à 0.1 ! 
+            </div>
+
+            <label for="date">Date d'Activité:</label><br>
+            <input type="text" id="date" formControlName="date" class="search-input" placeholder="MM-DD-YYYY"  [ngClass]="{ 'is-invalid': isValidPatternDate() && Date?.invalid }"><br>
+            <div *ngIf="isValidPatternDate() && Date?.invalid" class="alert alert-danger">
+              La date doit écrite sur la forme suivante MM-DD-YYYY ! 
+            </div>
+            <label for="lieu">Lieu:</label><br>
+            <input type="text" id="lieu" formControlName="lieu" class="search-input" [ngClass]="{ 'is-invalid': Lieu?.dirty && Lieu?.invalid }"><br>
+            <div *ngIf="Lieu?.dirty && Lieu?.invalid" class="alert alert-danger">
+              Le lieu est un champ obligatoire ! 
+            </div>
+            <label for="disponible">Disponibilité</label><br>
+            <input type="checkbox" formControlName="disponible" ><br>
+            <input type="submit" class="search-button" value="Modifier">
+            <input type="button" class="search-button" value="Abondonné" (click)="onLeaveModify()">
+            
+        </form>
+    </div>
+</div>
+<div *ngIf="ajoutform" class="ajout-form">
+<div class="search-bar">
+  <h1 style="font-family: Oswald, sans-serif;">Ajouter une activité :</h1>
+    <form [formGroup]="activiteForm" (ngSubmit)="Ajouter()">
+        <label for="nom">Nom Activité:</label><br>
+        <input type="text" id="nom" formControlName="nom" class="search-input"><br>
+        <div *ngIf="Nom?.invalid && Nom?.dirty" class="alert alert-danger">
+          le nom doit commence par une lettre majuscule et de minimum de 3 catactères ! 
+        </div>
+        <label for="image">Image:</label><br>
+        <input type="text" id="image" formControlName="image" class="search-input"><br>
+        <div *ngIf="isValidPattern()" class="alert alert-danger">
+          Le nombre des caractères doit être superieur à 3 caractères
+        </div>
+
+        <label for="prix">Prix:</label><br>
+        <input type="text" id="prix" formControlName="prix" class="search-input"><br>
+
+        <label for="date">Date d'Activité:</label><br>
+        <input type="text" id="date" formControlName="date" class="search-input" placeholder="MM-DD-YYYY"><br>
+
+        <label for="lieu">Lieu:</label><br>
+        <input type="text" id="lieu" formControlName="lieu" class="search-input"><br>
+        <label for="disponible">Disponibilité</label><br>
+        <input type="checkbox" formControlName="disponible"><br>
+        <input type="submit" class="search-button" value="Ajouter">
+        <input type="button" class="search-button" value="Abondonné" (click)="onLeaveAjout()">
+
+    </form>
+</div>
+</div>
+

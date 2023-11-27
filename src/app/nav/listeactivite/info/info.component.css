@@ -1,0 +1,148 @@
+.activity-container {
+    display: flex;
+    margin: 10px;
+    margin-top: 20px; 
+
+}
+
+.activity-content {
+    display: flex;
+    width: 100%;
+
+}
+.image-container {
+    width: 30%;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.separation{
+    height: 3px;
+    width: auto;
+    border:solid 3px red;
+    border-radius: 5px;
+}
+.barseparation{
+    height: 1px;
+    width: auto;
+    border:solid 1px grey;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border: solid red 3px;
+    border-radius: 3px;
+}
+.particip-button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Oswald ,sans-serif;
+    margin-left: 50px;
+    width: 200px;
+
+}
+
+.details-container {
+    flex: 1;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.activity-date, .activity-location, .activity-price, .activity-availability {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.activity-availability {
+    font-weight: bold;
+ 
+}
+
+.buttons {
+    font-family: Oswald ,sans-serif;
+    margin-top: 10px;
+
+  }
+  .membre-button{
+    margin-left: 30px;
+  }
+.retourne-button{
+    margin-left: 770px;
+}
+  .menubar{
+    height: 3px;
+    width: auto;
+    border:solid 3px red;
+    margin-top: 5px;
+  }
+  .member-form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 600px; 
+    height: 100%;
+    display: flex;
+    flex-direction: row; 
+  }
+  .return-button {
+    display: flex;
+    align-items: center; 
+}
+
+.membre-button, .retourne-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Oswald, sans-serif;
+    margin-right: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+.membre-button:hover, .retourne-button:hover {
+    background-color: rgb(114,21,21);
+}
+.search-button{
+    background-color: red;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    align-self: center; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease;    background-color: red;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 5px; 
+    margin-left: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+ .search-button:hover{
+    background-color: rgb(114,21,21);
+ }

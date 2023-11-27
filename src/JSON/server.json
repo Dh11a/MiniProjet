@@ -1,110 +1,20 @@
 {
-  "Admin": [
-    {
-      "login": "admin",
-      "password": "pwd"
-    }
-  ],
-  "Membres": [
-    {
-      "nom": "Ben Ali",
-      "prenom": "Mohamed",
-      "adresse": "10 Rue Habib Bourguiba, Tunis"
-    },
-    {
-      "nom": "Trabelsi",
-      "prenom": "Fatima",
-      "adresse": "25 Avenue de la République, Sousse"
-    },
-    {
-      "nom": "Bouazizi",
-      "prenom": "Ahmed",
-      "adresse": "8 Rue de la Liberté, Sidi Bouzid"
-    },
-    {
-      "nom": "Hajji",
-      "prenom": "Leila",
-      "adresse": "15 Boulevard Habib Thameur, Nabeul"
-    },
-    {
-      "nom": "Mzali",
-      "prenom": "Riadh",
-      "adresse": "30 Rue des Martyrs, Monastir"
-    },
-    {
-      "nom": "Khaldi",
-      "prenom": "Amira",
-      "adresse": "5 Avenue Farhat Hached, Bizerte"
-    },
-    {
-      "nom": "Chahed",
-      "prenom": "Nizar",
-      "adresse": "12 Rue Tahar Haddad, Mahdia"
-    },
-    {
-      "nom": "Jebali",
-      "prenom": "Amina",
-      "adresse": "18 Avenue Habib Bourguiba, Gafsa"
-    },
-    {
-      "nom": "Gannouchi",
-      "prenom": "Rached",
-      "adresse": "22 Rue Ibn Khaldoun, Gabès"
-    },
-    {
-      "nom": "Toumi",
-      "prenom": "Sarra",
-      "adresse": "40 Avenue Habib Thameur, Sfax"
-    }
-  ],
   "Activites": [
-    {
-      "id": 1,
-      "nom": "Randonnée en montagne",
-      "prix": 30,
-      "image": "assets/1294371.jpg",
-      "date": "2023-11-18",
-      "lieu": "Montagnes de l'Atlas"
-    },
-    {
-      "id": 2,
-      "nom": "Cours de cuisine tunisienne",
-      "prix": 50,
-      "image": "assets/randonnee1.jpg",
-      "date": "2023-11-19",
-      "lieu": "École de cuisine tunisienne"
-    },
-    {
-      "id": 3,
-      "nom": "Visite guidée du musée de Carthage",
-      "prix": 15,
-      "image": "assets/1294371.jpg",
-      "date": "2023-11-20",
-      "lieu": "Musée de Carthage"
-    },
-    {
-      "id": 5,
-      "nom": "Concert de musique traditionnelle tunisienne",
-      "prix": 40,
-      "image": "assets/1294371.jpg",
-      "date": "2023-11-22",
-      "lieu": "Amphithéâtre romain de Dougga"
-    },
-    {
-      "id": 6,
-      "nom": "Exposition artistique à Tunis",
-      "prix": 20,
-      "image": "assets/1294371.jpg",
-      "date": "2023-11-23",
-      "lieu": "Galerie d'art moderne de Tunis"
-    },
     {
       "id": 7,
       "nom": "Atelier de poterie à Nabeul",
       "prix": 25,
       "image": "assets/1294371.jpg",
       "date": "2023-11-24",
-      "lieu": "Atelier de poterie de Nabeul"
+      "lieu": "Atelier de poterie de Nabeul",
+      "disponible": false,
+      "Membres": [
+        {
+          "nom": "Mzali",
+          "prenom": "Riadh",
+          "adresse": "30 Rue des Martyrs, Monastir"
+        }
+      ]
     },
     {
       "id": 8,
@@ -112,7 +22,9 @@
       "prix": 35,
       "image": "assets/1294371.jpg",
       "date": "2023-11-25",
-      "lieu": "Port de Houmt Souk"
+      "lieu": "Port de Houmt Souk",
+      "disponible": true,
+      "Membres": []
     },
     {
       "id": 9,
@@ -120,31 +32,9 @@
       "prix": 15,
       "image": "assets/1294371.jpg",
       "date": "2023-11-26",
-      "lieu": "Falaise de Sidi Bou Said"
-    },
-    {
-      "id": 10,
-      "nom": "Soirée jeux de société à Tunis",
-      "prix": 5,
-      "image": "assets/1294371.jpg",
-      "date": "2023-11-27",
-      "lieu": "Café ludique de Tunis"
-    },
-    {
-      "nom": "barc",
-      "image": "C:\\fakepath\\wallpaperflare.com_wallpaper (3).jpg",
-      "prix": "1990",
-      "date": "oct 04,1920",
-      "lieu": "ariana",
-      "id": 13
-    },
-    {
-      "nom": "real",
-      "image": "C:\\Users\\msi\\Desktop\\MiniProjet\\src\\assets\\logo.png",
-      "prix": "1933",
-      "date": "sept 30,2003",
-      "lieu": "darna",
-      "id": 14
+      "lieu": "Falaise de Sidi Bou Said",
+      "disponible": true,
+      "Membres": []
     }
   ]
 }

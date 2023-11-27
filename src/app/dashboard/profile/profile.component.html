@@ -1,4 +1,15 @@
 <router-outlet></router-outlet>
-<input [(ngModel)]="newPassword" type="password" placeholder="New Password">
-<input [(ngModel)]="confirmPassword" type="password" placeholder="Confirm Password">
-<button (click)="onChangePassword()">Valider</button>
+
+<form [formGroup]="passwordForm" (ngSubmit)="onChangePassword()">
+  <div>
+    <label for="newPassword">New Password</label>
+    <input formControlName="newPassword" type="password" placeholder="New Password">
+  </div>
+  <div>
+    <label for="confirmPassword">Confirm Password</label>
+    <input formControlName="confirmPassword" type="password" placeholder="Confirm Password">
+  </div>
+  <div>
+    <button type="submit">Valider</button>
+  </div>
+</form>

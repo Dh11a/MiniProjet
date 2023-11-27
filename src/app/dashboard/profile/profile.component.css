@@ -1,30 +1,46 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-input{
-    margin-left: 5px;
-    position: relative;
-    padding: 10px;
-    font-size: 16px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 250px;
-    font-family: Oswald ,sans-serif;
 
-}
-button{
-    padding: 10px 20px;
-    margin-left:5px ;
-    font-size: 16px;
-    background-color: #F2385A;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: Oswald ,sans-serif;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
 }
 
-button:hover{
-    background-color: #892134;
-    font-family: Oswald ,sans-serif;
+div {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-family: Oswald, sans-serif;
+  width: 250px; 
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+  font-family: Oswald, sans-serif;
+  margin-top: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Oswald, sans-serif;
+}
+
+button:hover {
+  background-color: rgb(114,21,21);
+  font-family: Oswald, sans-serif;
 }

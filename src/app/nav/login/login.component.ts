@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LoginService } from 'src/app/Services/login.service';
 
@@ -7,18 +8,39 @@ import { LoginService } from 'src/app/Services/login.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent {
-  constructor(private router:Router,private loginservice:LoginService){}
-  onAuthentifie(admin:string,pwd:string){
-    if(this.loginservice.login(admin,pwd)){
-      this.router.navigate(['/dashboard']);
+export class LoginComponent implements OnInit {
+  adminForm!: FormGroup;
 
+  constructor(private router: Router, private loginservice: LoginService, private fb: FormBuilder) { }
+
+  ngOnInit(): void {
+    this.adminForm = this.fb.group({
+      username: [''],
+      pass: ['']
+    });
+  }
+
+  onAuthentifie() {
+    if (this.adminForm.valid) {
+      const username = this.adminForm.get('username')?.value;
+      const pass = this.adminForm.get('pass')?.value;
+    
+      console.log('Attempting login with:', username, pass);
+      //test//
+    
+      if (this.loginservice.login(username, pass)) {
+        this.router.navigate(['/dashboard']);
+      } else {
+        alert("Erreur, Veuillez vérifier l'adresse ou le mot de passe !!");
+      }
+    } else {
+      alert('Veuillez remplir tous les champs correctement.');
     }
-    else{
-      alert("Erreur, Veuillez verifier l'adresse ou le mot de passe !!");
-    }
-}
-onRetourne(){
-  this.router.navigate(['/accueil']);
-}
-}
+  }
+
+  onRetourne() {
+    this.router.navigate(['/accueil']);
+  }
+  }
+  
+
